@@ -9,6 +9,7 @@ tinystatus generate an html status page via shell script.
 * HTTP expected status code (401, ...)
 * Minimal dependencies (curl, nc, dig and coreutils)
 * Easy configuration and customisation
+* Tiny (~1kb) optimized result page
 * Incident history (manual)
 
 ## Demo
@@ -39,4 +40,4 @@ Command can be:
 * `dns`  - Check dns status
 
 There are also `http4`, `http6`, `ping4`, `ping6`, `port4`, `port6`, `dns4`, `dns6` for IPv4 or IPv6 only check.
-Note: `port4` and `port6` require OpenBSD `nc` binary; `dns4` and `dns6` require Bind9 `dig` binary;
+Note: `port4` and `port6` require OpenBSD `nc` binary; `dns4` and `dns6` require Bind9 `dig` binary.
