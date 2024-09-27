@@ -46,7 +46,7 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       -
-        name: Build and push
+        name: Build
         id: docker_build
         uses: docker/build-push-action@v6
         with:
@@ -109,8 +109,8 @@ jobs:
       - name: On vulnerability threshold exceeded
         run: echo ${{ steps.inspector.outputs.vulnerability_threshold_exceeded }}
       -
-        name: Build and push
-        id: docker_build
+        name: Push
+        id: docker_push
         uses: docker/build-push-action@v6
         with:
           load: true
